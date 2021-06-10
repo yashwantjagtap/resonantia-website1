@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: poppins,sans-serif;
+    font-weight: 700;
+    color: #2e2e2e;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6a6972;
+    /* margin-top: 20px; */
+    /* text-align: justify; */
+}
+img {
+    max-width: 100%;
+}
+::before ,::after{
+    box-sizing: border-box;
+}
+/* body{
+    background-color: #ecebeb85;
+} */
+a{
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+:root{
+    --icon-color:#b52bd4;
+    --btn-color: linear-gradient( to top,  rgb(181, 43, 212) 11.2%, rgba(157,43,214,1) 91.2% );
+}
+/* --------------- compony logo ---------------------------- */
+.RT-logo{
+    height: 60px;
+    width: 100px;
+}
+/* ----------------------svg img---------------------------- */
+.bg-top-header{
+    background-image: url(/images/bg/banner-bg.svg);
+    position: relative;
+    z-index: 5;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+/* -----------------navbar--------------------------------- */
+.bg-main-header{
+    background-color:#fff;
+    border-radius: 50px;
+    margin-top: 30px;
+    padding: 0 30px;
+}
+.navbar{
+    padding: 0 !important;
+}
+.navbar-nav .nav-item{
+    /* padding:0 5px; */
+    font-size: 15px;
+    font-weight: 400;
+}
+.navbar-nav .nav-item:last-child{
+    background-image: var(--btn-color);
+    border-radius: 30px;
+    padding: 0 5px;
+}
+.navbar-nav .nav-item:last-child>a{
+    color: #fff;
+}
+/* ------------------header-content-info-------------------------- */
+.header-content{
+    padding-top: 120px;
+}
+.header-main-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    /* word-spacing: 5px; */
+    margin-bottom: 35px;
+}
+.header-sub-title{
+    color: #fff;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;  
+}
+.view-service-btn{
+    display: inline-block;
+    margin-top:20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    border-radius: 80px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    background: var(--btn-color);
+}
+.header-lap-img{
+    padding-top: 40px;
+    text-align: center;
+}
+.header-lap-img img{
+    max-width: 650px;
+    filter: drop-shadow(5px 10px 12px );
+}
+/* ----------------------service-section-------------------------------- */
+.our-service{
+    margin: 50px 0;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 45px;
+    /* text-shadow: 2px 5px 10px rgba(116, 116, 116, 0.82); */
+}
+.bottom-line{
+    width: 320px;
+    height: 8px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: var(--btn-color);
+    filter: drop-shadow(0px 15px 6px);
+}
+/* --------------  card-start--------------------------------- */
+.service-card{
+    background-color: rgba(145, 143, 143, 0.096);
+    padding: 50px 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    text-align: center; 
+}
+.service-icon{
+    display: inline-block;
+    position: relative;
+}
+.service-card .service-icon .shape-1,.inner-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.card-text, .services-title{
+    margin-top: 30px;
+
+}
+.service-card .card-text{
+    text-align: justify;
+}
+.services-content a{
+    margin-top: 30px;
+    display: inline-block;
+}
+.services-content a i{
+    margin-top: 40px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.services-content a:hover{
+    color: #000;
+}
+/* -----------------------service-section-end-------------------------------*/
+                            
+/* ------------------------ common section ------------------ */
+.section-1, .section-2, .section-3, .section-4{
+    padding-top: 80px;
+}
+.section-content{
+    margin-top: 80px;
+    max-width: 480px;
+}
+.section-title .div-line{
+    width: 220px;
+    height: 8px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background: var(--btn-color);
+    filter: drop-shadow(0px 15px 6px);
+}
+.section-content .text{
+    margin-top: 30px;
+    text-align: justify;
+}
+.section-title .title {
+    font-size: 32px;
+    padding-top: 10px;
+}
+.section-title .title span {
+    font-weight: 400;
+}
+.section-img{
+    margin-top: 80px;
+    /* background-image: url(/images/bg/secured-shape-1.svg);
+    background-position: cover;
+    block-size: 100% , 100%; */
+    max-width: 490px;
+}
+.section-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    /* z-index: -1; */
+}
+.section-bg img{
+    width: 100%;
+}
+/* -----------end----------------- */
+/* -------------------client-section------------------- */
+.client-section{
+    background-color: f0f0f52c;
+}
+.client-section .client-testimonial{
+    background-color: #fff;
+    box-shadow: 10px 6px 11px 5px rgb(167 167 167 / 50%);
+    /* overflow: hidden; */
+    border-radius: 20px;
+    padding: 5px 30px ;
+    border-radius: 10px;
+    border: 1px solid var(--icon-color);
+    margin: 30px 0;
+}
+.client-section .client-review{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content:space-between;
+}
+.client-section .client-review .quota i{
+    font-size: 35px;
+    color: var(--icon-color);
+}
+.client-section .client-review .star ul li{
+    display: inline-block;
+    font-size: 16px;
+    color: var(--icon-color);
+}
+.client-section .client-text{
+    margin-top: 25px;
+    text-align: center;
+}
+.client-section .client-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;   
+}
+.client-section .client-img{
+    position: relative;
+}
+.client-section .client-img .author{
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 80px;
+    height: 80px;
+}
+.client-content .client-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2e2e2e;
+}
+.client-content.text{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+/* -------------------- footer-section-------------------------------------- */
+.footer-area{
+    padding-top: 120px;
+    background-position: top center;
+    position: relative;
+    z-index: 5;
+}
+.footer-area::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/bg/footer-bg.svg);
+    background-position: top center;
+    z-index: -1;
+    background-size: cover;
+}
+.footer-area .form-area{
+    padding: 15px 90px;
+    box-shadow: 0 0 20px 5px rgb(50 77 215 / 14%);
+    border-radius: 80px 0px;
+    background-color: #fff;
+}
+.footer-area .form-area img{
+    width: 70%;
+    margin: 30px 0 0 30px;
+    background-image: url(/images/bg/about-shape-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-area .form-area .enquiry-form{
+    width: 80%;
+    margin-top: 30px;
+}
+.footer-area .view-service-btn{
+    float: right;
+    margin-top: 0px;
+}    
+/* .footer-area .form-area .form-control:focus{
+} */
+.footer-area .footer-content{
+    flex-wrap: nowrap;
+    padding-bottom:30px;
+}
+.footer-area .footer-about{
+    margin-top: 50px;
+}
+.footer-area .footer-about > a img{
+    height:100px;
+    width: 220px;
+    margin: 0px 20px 20px 0;
+}
+.footer-area .footer-about > p{
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.footer-area .footer-about .social-icon li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.footer-area .footer-about .social-icon li a{
+    color:#fff;
+    font-size: 20px;
+}
+.footer-content .quick-link, .contact-us{
+    margin-top: 50px;
+}
+.footer-content .footer-header{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer-content .quick-link ul li{
+    margin: 20px 0px;
+}
+.footer-content .quick-link ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer-content .contact-us ul li{
+    margin-bottom: 20px;    
+}
+.footer-content .contact-us ul li a{
+    color: #fff;
+}
+.footer-copyright{
+    border-top: 3px solid rgba(255, 255, 255, 0.356);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
